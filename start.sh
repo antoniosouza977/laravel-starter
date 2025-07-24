@@ -18,3 +18,7 @@ update_env_var "VITE_HMR_PORT" "$NODE_PORT"
 update_env_var "UNAME" "$USER"
 update_env_var "UID" "$(id -u)"
 update_env_var "GID" "$(id -g)"
+
+docker compose down
+docker compose build
+docker compose up -d --remove-orphans

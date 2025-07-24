@@ -5,6 +5,7 @@
 /public/storage
 /storage/*.key
 /vendor
+artisan
 package-lock.json
 .env
 .env.backup
@@ -21,3 +22,4 @@ yarn-error.log
 /.vscode
 /.zed
 composer.lock
+.github
