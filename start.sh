@@ -1,3 +1,5 @@
+#!/bin/bash
+
 update_env_var() {
     local var_name=$1
     local var_value=$2
@@ -20,5 +22,4 @@ update_env_var "UID" "$(id -u)"
 update_env_var "GID" "$(id -g)"
 
 docker compose down
-docker compose build
-docker compose up -d --remove-orphans
+docker compose up -d --build
